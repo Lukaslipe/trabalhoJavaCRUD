@@ -1,0 +1,4 @@
+1 - Cadastrar endereço
+2 - Localizar endereço
+3 - Editar endereço
+4 - Excluir endereço

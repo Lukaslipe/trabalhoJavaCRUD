@@ -1,0 +1,4 @@
+1 - Criar conta
+2 - Excluir conta
+3 - Editar conta
+4 - Pesquisar conta

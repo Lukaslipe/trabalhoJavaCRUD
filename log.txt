@@ -1,0 +1,23 @@
+[2025-05-19 18:34:56] Cadastro de pessoa: 999 - Elo
+[2025-05-19 18:41:01] Cadastro de pessoa: 777 - Marcus
+[2025-05-19 18:41:43] Cadastro de pessoa: 589 - Julia
+[2025-05-19 18:42:22] Cadastro de pessoa: 890 - Mylena
+[2025-05-19 18:43:05] Cadastro de pessoa: 145 - Lucas 
+[2025-05-19 19:02:29] Cadastro de pessoa: 789 - Fernando
+[2025-05-19 19:27:03] Busca realizada - termo: lucas
+[2025-05-19 19:27:58] Busca realizada - termo: física
+[2025-05-19 19:28:10] Busca realizada - termo: jurídica
+[2025-05-19 19:28:20] Busca realizada - termo: 999
+[2025-05-19 19:28:46] Cadastro de pessoa: 999 - Luisa
+[2025-05-19 19:28:54] Busca realizada - termo: 999
+[2025-05-19 19:35:36] Exclusão de pessoa com código: 999
+[2025-05-19 19:42:04] Edição realizada para código: 589
+[2025-05-19 19:42:09] Busca realizada - termo: 589
+[2025-05-19 20:30:43] Endereço cadastrado para pessoa de código: 589
+[2025-05-19 21:11:16] Localizou endereços da pessoa de código: 589
+[2025-05-19 21:14:19] Localizou endereços da pessoa de código: 589
+[2025-05-19 21:14:40] Localizou endereços da pessoa de código: 589
+[2025-05-19 21:14:46] Localizou endereços da pessoa de código: 589
+[2025-05-19 21:15:40] Endereço editado para pessoa de código: 589, CEP original: 83010-390
+[2025-05-19 21:15:46] Localizou endereços da pessoa de código: 589
+[2025-05-19 21:17:16] Endereço excluído para pessoa de código: 589, CEP: 83090-440
