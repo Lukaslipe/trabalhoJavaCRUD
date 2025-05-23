@@ -34,6 +34,8 @@ public class EditarPessoa {
         } catch (IOException e) {
             System.out.println("Erro ao ler o arquivo: " + e.getMessage());
             Log.salvar("Erro na edição: " + e.getMessage());
+            scanner.close();
+
             return;
         }
 
@@ -52,5 +54,7 @@ public class EditarPessoa {
             System.out.println("Pessoa com código " + codigoParaEditar + " não encontrada.");
             Log.salvar("Tentativa de edição falhou - código não encontrado: " + codigoParaEditar);
         }
+        scanner.close();
+
     }
 }

@@ -31,11 +31,13 @@ public class ExcluirEndereco {
             }
         } catch (IOException e) {
             System.out.println("Erro ao ler arquivo de endereços: " + e.getMessage());
+            scanner.close();
             return;
         }
 
         if (!enderecoEncontrado) {
             System.out.println("Endereço não encontrado para o código e CEP informados.");
+            scanner.close();
             return;
         }
 
@@ -49,5 +51,7 @@ public class ExcluirEndereco {
         } catch (IOException e) {
             System.out.println("Erro ao salvar arquivo de endereços: " + e.getMessage());
         }
+        scanner.close();
+
     }
 }

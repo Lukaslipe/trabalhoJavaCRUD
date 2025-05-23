@@ -35,5 +35,6 @@ public class MenuPessoa {
             }
 
         } while (opcao != 0);
+        scanner.close();
     }
 }

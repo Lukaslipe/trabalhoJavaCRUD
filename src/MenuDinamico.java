@@ -32,5 +32,6 @@ public class MenuDinamico {
             }
 
         } while (escolha != 0);
+        scanner.close();
     }
 }

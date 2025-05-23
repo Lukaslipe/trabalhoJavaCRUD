@@ -26,5 +26,8 @@ public class CadastroPessoa {
         } catch (IOException e) {
             System.out.println("Erro ao salvar pessoa: " + e.getMessage());
         }
+
+        scanner.close();
+
     }
 }

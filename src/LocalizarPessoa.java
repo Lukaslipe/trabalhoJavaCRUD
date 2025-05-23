@@ -33,5 +33,6 @@ public class LocalizarPessoa {
         if (!encontrada) {
             System.out.println("Pessoa com código " + codigoBuscado + " não encontrada.");
         }
+        scanner.close();
     }
 }

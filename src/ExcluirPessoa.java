@@ -29,6 +29,7 @@ public class ExcluirPessoa {
 
         } catch (IOException e) {
             System.out.println("Erro ao ler o arquivo: " + e.getMessage());
+            scanner.close();
             return;
         }
 
@@ -45,5 +46,6 @@ public class ExcluirPessoa {
         } else {
             System.out.println("Pessoa com código " + codigoParaExcluir + " não encontrada.");
         }
+        scanner.close();
     }
 }

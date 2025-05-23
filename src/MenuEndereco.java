@@ -35,5 +35,6 @@ public class MenuEndereco {
             }
 
         } while (opcao != 0);
+        scanner.close();
     }
 }
