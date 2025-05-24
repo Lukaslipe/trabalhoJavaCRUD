@@ -30,7 +30,7 @@ public class CadastroEndereco {
 
         // Criação do texto a ser salvo no arquivo de endereços
         String enderecoFormatado = String.format(
-                "PessoaCódigo:%s; CEP:%s; Logradouro:%s; Número:%s; Complemento:%s; Tipo:%s",
+                "CódigoPessoa:%s; CEP:%s; Logradouro:%s; Número:%s; Complemento:%s; Tipo:%s",
                 codigoPessoa, cep, logradouro, numero, complemento, tipo
         );
 
