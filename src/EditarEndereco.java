@@ -52,7 +52,6 @@ public class EditarEndereco {
 
                     linhas.add(novoEndereco);
                 } else {
-                    // Linha não editada, mantida normal
                     linhas.add(linha);
                 }
             }
@@ -78,6 +77,5 @@ public class EditarEndereco {
         } catch (IOException e) {
             System.out.println("Erro ao salvar arquivo de endereços: " + e.getMessage());
         }
-        scanner.close();
     }
 }

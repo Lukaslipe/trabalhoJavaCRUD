@@ -21,3 +21,8 @@
 [2025-05-19 21:15:40] Endereço editado para pessoa de código: 589, CEP original: 83010-390
 [2025-05-19 21:15:46] Localizou endereços da pessoa de código: 589
 [2025-05-19 21:17:16] Endereço excluído para pessoa de código: 589, CEP: 83090-440
+[2025-05-26 19:14:37] Tentativa de edição falhou - código não encontrado: 123
+[2025-05-26 19:22:04] Tentativa de edição falhou - código não encontrado: 123
+[2025-05-26 19:26:08] Tentativa de edição falhou - código não encontrado: 123
+[2025-05-26 19:36:14] Tentativa de edição falhou - código não encontrado: 123
+[2025-05-26 19:43:38] Tentativa de edição falhou - código não encontrado: 123

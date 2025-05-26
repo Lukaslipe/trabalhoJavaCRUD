@@ -24,10 +24,8 @@ public class CadastroPessoa {
             Log.salvar("Cadastro de pessoa: " + pessoa.getNome());
             System.out.println("Pessoa cadastrada com sucesso!");
         } catch (IOException e) {
-            System.out.println("Erro ao salvar pessoa: " + e.getMessage());
+            System.out.println("Erroo ao salvar pessoa: " + e.getMessage());
         }
-
-        scanner.close();
 
     }
 }

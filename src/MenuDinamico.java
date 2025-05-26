@@ -21,8 +21,8 @@ public class MenuDinamico {
                 escolha = Integer.parseInt(scanner.nextLine());
 
                 switch (escolha) {
-                    case 1 -> MenuPessoa.exibir();
-                    case 2 -> MenuEndereco.exibir();
+                    case 1 -> MenuPessoa.exibir(scanner);
+                    case 2 -> MenuEndereco.exibir(scanner);
                     case 0 -> System.out.println("Encerrando o programa...");
                     default -> System.out.println("Opção inválida.");
                 }
@@ -32,6 +32,5 @@ public class MenuDinamico {
             }
 
         } while (escolha != 0);
-        scanner.close();
     }
 }

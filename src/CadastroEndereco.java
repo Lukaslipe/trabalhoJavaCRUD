@@ -44,8 +44,7 @@ public class CadastroEndereco {
 
         // Salvando no log
         Log.salvar("Endereço cadastrado para pessoa de código: " + codigoPessoa);
-    
-        scanner.close();
+
 
     }
 }

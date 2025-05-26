@@ -51,7 +51,6 @@ public class ExcluirEndereco {
         } catch (IOException e) {
             System.out.println("Erro ao salvar arquivo de endereços: " + e.getMessage());
         }
-        scanner.close();
 
     }
 }

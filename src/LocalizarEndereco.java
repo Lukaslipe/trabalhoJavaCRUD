@@ -31,6 +31,5 @@ public class LocalizarEndereco {
         } else {
             Log.salvar("Localizou endereços da pessoa de código: " + codigoPessoa);
         }
-        scanner.close();
     }
 }

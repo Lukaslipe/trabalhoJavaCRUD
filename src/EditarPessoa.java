@@ -54,7 +54,6 @@ public class EditarPessoa {
             System.out.println("Pessoa com código " + codigoParaEditar + " não encontrada.");
             Log.salvar("Tentativa de edição falhou - código não encontrado: " + codigoParaEditar);
         }
-        scanner.close();
 
     }
 }

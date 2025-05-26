@@ -1,10 +1,10 @@
 import java.util.List;
 import java.util.Scanner;
 
+
 public class MenuPessoa {
 
-    public static void exibir() {
-        Scanner scanner = new Scanner(System.in);
+    public static void exibir(Scanner scanner) {  // Recebe o scanner
         int opcao;
 
         List<String> menuPessoas = Util.lerOpcoesDoArquivo("menu_pessoas.txt");
@@ -35,6 +35,5 @@ public class MenuPessoa {
             }
 
         } while (opcao != 0);
-        scanner.close();
     }
 }

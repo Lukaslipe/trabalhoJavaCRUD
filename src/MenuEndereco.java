@@ -1,10 +1,10 @@
 import java.util.List;
 import java.util.Scanner;
 
+
 public class MenuEndereco {
 
-    public static void exibir() {
-        Scanner scanner = new Scanner(System.in);
+    public static void exibir(Scanner scanner) {  // Recebe o scanner por parâmetro
         int opcao;
 
         List<String> menuEnderecos = Util.lerOpcoesDoArquivo("menu_enderecos.txt");
@@ -35,6 +35,6 @@ public class MenuEndereco {
             }
 
         } while (opcao != 0);
-        scanner.close();
+
     }
 }

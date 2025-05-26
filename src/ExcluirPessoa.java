@@ -46,6 +46,5 @@ public class ExcluirPessoa {
         } else {
             System.out.println("Pessoa com código " + codigoParaExcluir + " não encontrada.");
         }
-        scanner.close();
     }
 }
