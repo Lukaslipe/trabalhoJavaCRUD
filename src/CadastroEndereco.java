@@ -25,16 +25,14 @@ public class CadastroEndereco {
         System.out.print("Complemento: ");
         String complemento = scanner.nextLine();
 
-        System.out.print("Tipo de endereço (residencial, comercial, etc.): ");
-        String tipo = scanner.nextLine();
+        int codigoTipo = Util.PerguntaUtil.perguntar("tipos_endereco.txt", "Escolha o tipo de endereço:");
+        String tipoEndereco = Util.PerguntaUtil.retornarDescricao("tipos_endereco.txt", codigoTipo);
 
-        // Criação do texto a ser salvo no arquivo de endereços
         String enderecoFormatado = String.format(
                 "CódigoPessoa:%s; CEP:%s; Logradouro:%s; Número:%s; Complemento:%s; Tipo:%s",
-                codigoPessoa, cep, logradouro, numero, complemento, tipo
+                codigoPessoa, cep, logradouro, numero, complemento, tipoEndereco
         );
 
-        // Salvando no arquivo de endereços
         try (PrintWriter writer = new PrintWriter(new FileWriter("enderecos.txt", true))) {
             writer.println(enderecoFormatado);
             System.out.println("Endereço cadastrado com sucesso!");
@@ -42,9 +40,7 @@ public class CadastroEndereco {
             System.out.println("Erro ao salvar endereço: " + e.getMessage());
         }
 
-        // Salvando no log
+        // ✅ Salvando no log
         Log.salvar("Endereço cadastrado para pessoa de código: " + codigoPessoa);
-
-
     }
 }

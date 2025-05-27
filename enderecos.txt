@@ -1,0 +1,6 @@
+CódigoPessoa:777; CEP:89745612; Logradouro:Rua Lilas; Número:685; Complemento:casa; Tipo:Residencial
+CódigoPessoa:777; CEP:83010390; Logradouro:rua aaaaaaaa; Número:654; Complemento:sda; Tipo:Comercial
+CódigoPessoa:456; CEP:1235431; Logradouro:poiuytrew; Número:765; Complemento:jhgf; Tipo:null
+CódigoPessoa:768; CEP:0987yt; Logradouro:kjhg; Número:989; Complemento:gasd; Tipo:null
+CódigoPessoa:876; CEP:354768234; Logradouro:loucksac; Número:906; Complemento:casa; Tipo:null
+CódigoPessoa:714; CEP:09876543; Logradouro:julio; Número:902; Complemento:julio; Tipo:Comercial

@@ -1,4 +1,4 @@
 1 - Criar conta
-2 - Excluir conta
-3 - Editar conta
-4 - Pesquisar conta
+2 - Pesquisar conta
+3 - Excluir conta
+4 - Editar conta

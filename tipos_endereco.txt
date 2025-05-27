@@ -1,0 +1,4 @@
+10;Residencial
+20;Comercial
+30;Cobranca
+40;Entrega

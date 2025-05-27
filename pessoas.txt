@@ -1,5 +1,4 @@
-777;Marcus;Física
-589;Jujulia;Física
+589;Jujuliaa;Chata
 890;Mylena;Física
 145;Lucas ;Jurídica
 789;Fernando;Física
