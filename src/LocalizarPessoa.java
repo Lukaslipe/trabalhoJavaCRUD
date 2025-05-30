@@ -16,11 +16,18 @@ public class LocalizarPessoa {
             String linha;
             while ((linha = br.readLine()) != null) {
                 String[] dados = linha.split(";");
-                if (dados.length >= 3 && dados[0].equals(codigoBuscado)) {
+                if (dados.length >= 4 && dados[0].equals(codigoBuscado)) {
                     System.out.println("Pessoa encontrada:");
                     System.out.println("Código: " + dados[0]);
                     System.out.println("Nome: " + dados[1]);
                     System.out.println("Tipo: " + dados[2]);
+                    if (dados[2].equals("Cliente")) {
+                        System.out.println("CPF: " + dados[3]);
+                    } else if (dados[2].equals("Fornecedor")) {
+                        System.out.println("CNPJ: " + dados[3]);
+                    } else {
+                        System.out.println("Documento: " + dados[3]);
+                    }
                     Log.salvar("Pessoa localizada: " + dados[1]);
                     encontrada = true;
                     break;

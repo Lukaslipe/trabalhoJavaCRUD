@@ -1,0 +1,4 @@
+1 - Cadastrar Produto
+2 - Localizar Produto
+3 - Editar Produto
+4 - Excluir Produto

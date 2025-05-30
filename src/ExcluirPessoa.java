@@ -19,17 +19,16 @@ public class ExcluirPessoa {
 
             while ((linha = br.readLine()) != null) {
                 String[] dados = linha.split(";");
-                if (dados.length >= 3 && dados[0].equals(codigoParaExcluir)) {
+                if (dados.length >= 4 && dados[0].equals(codigoParaExcluir)) {
                     encontrada = true;
                     nomeExcluido = dados[1];
-                    continue; // pula essa linha para efetivamente excluir
+                    continue; // Pula a linha para excluir
                 }
                 linhasAtualizadas.add(linha);
             }
 
         } catch (IOException e) {
             System.out.println("Erro ao ler o arquivo: " + e.getMessage());
-            scanner.close();
             return;
         }
 

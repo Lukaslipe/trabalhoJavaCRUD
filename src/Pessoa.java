@@ -1,12 +1,10 @@
 public class Pessoa {
     private int cod;
     private String nome;
-    private String tipoPessoa;
 
-    public Pessoa(int cod, String nome, String tipoPessoa) {
+    public Pessoa(int cod, String nome) {
         this.cod = cod;
         this.nome = nome;
-        this.tipoPessoa = tipoPessoa;
     }
 
     public int getCod() {
@@ -25,16 +23,9 @@ public class Pessoa {
         this.nome = nome;
     }
 
-    public String getTipoPessoa() {
-        return tipoPessoa;
-    }
-
-    public void setTipoPessoa(String tipoPessoa) {
-        this.tipoPessoa = tipoPessoa;
-    }
-
+    // Polimorfismo: vamos sobrescrever esse método nas subclasses.
     @Override
     public String toString() {
-        return cod + ";" + nome + ";" + tipoPessoa;
+        return cod + ";" + nome;
     }
 }

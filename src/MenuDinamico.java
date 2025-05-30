@@ -23,6 +23,7 @@ public class MenuDinamico {
                 switch (escolha) {
                     case 1 -> MenuPessoa.exibir(scanner);
                     case 2 -> MenuEndereco.exibir(scanner);
+                    case 3 -> MenuProduto.exibir(scanner);
                     case 0 -> System.out.println("Encerrando o programa...");
                     default -> System.out.println("Opção inválida.");
                 }

@@ -8,24 +8,44 @@ public class CadastroPessoa {
     public static void cadastrarPessoa() {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Digite o código da pessoa: ");
+        String escolha;
+        // Loop até a escolha ser válida
+        do {
+            System.out.println("Escolha o tipo de pessoa para cadastrar:");
+            System.out.println("1 - Cliente");
+            System.out.println("2 - Fornecedor");
+            System.out.print("Opção: ");
+            escolha = scanner.nextLine().trim();
+
+            if (!escolha.equals("1") && !escolha.equals("2")) {
+                System.out.println("Opção inválida! Tente novamente.");
+            }
+        } while (!escolha.equals("1") && !escolha.equals("2"));
+
+        System.out.print("Digite o código: ");
         int cod = Integer.parseInt(scanner.nextLine());
 
-        System.out.print("Digite o nome da pessoa: ");
+        System.out.print("Digite o nome: ");
         String nome = scanner.nextLine();
 
-        System.out.print("Digite o tipo da pessoa (Física ou Jurídica): ");
-        String tipo = scanner.nextLine();
+        Pessoa pessoa;
 
-        Pessoa pessoa = new Pessoa(cod, nome, tipo);
+        if (escolha.equals("1")) {
+            System.out.print("Digite o CPF do Cliente: ");
+            String cpf = scanner.nextLine();
+            pessoa = new Cliente(cod, nome, cpf);
+        } else {
+            System.out.print("Digite o CNPJ do Fornecedor: ");
+            String cnpj = scanner.nextLine();
+            pessoa = new Fornecedor(cod, nome, cnpj);
+        }
 
         try (PrintWriter out = new PrintWriter(new FileWriter("pessoas.txt", true))) {
-            out.println(pessoa.getCod() + ";" + pessoa.getNome() + ";" + pessoa.getTipoPessoa());
+            out.println(pessoa.toString());
             Log.salvar("Cadastro de pessoa: " + pessoa.getNome());
             System.out.println("Pessoa cadastrada com sucesso!");
         } catch (IOException e) {
-            System.out.println("Erroo ao salvar pessoa: " + e.getMessage());
+            System.out.println("Erro ao salvar pessoa: " + e.getMessage());
         }
-
     }
 }

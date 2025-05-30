@@ -38,3 +38,8 @@
 [2025-05-26 21:09:31] Pessoa localizada: Jujulia
 [2025-05-26 21:10:14] Edição realizada para código: 589
 [2025-05-26 21:17:21] Edição realizada para código: 589
+[2025-05-30 20:16:51] Cadastro de pessoa: FR Cristo Transportes S.A
+[2025-05-30 20:16:59] Pessoa localizada: FR Cristo Transportes S.A
+[2025-05-30 20:49:57] Cadastro de produto: Cadeira de praia
+[2025-05-30 20:51:01] Edição realizada para produto código: 109021
+[2025-05-30 20:51:20] Produto excluído: Cadeira de praia

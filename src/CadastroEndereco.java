@@ -40,7 +40,6 @@ public class CadastroEndereco {
             System.out.println("Erro ao salvar endereço: " + e.getMessage());
         }
 
-        // ✅ Salvando no log
         Log.salvar("Endereço cadastrado para pessoa de código: " + codigoPessoa);
     }
 }
