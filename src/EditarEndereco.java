@@ -23,7 +23,7 @@ public class EditarEndereco {
             String linha;
             while ((linha = reader.readLine()) != null) {
                 // Verifica se essa linha corresponde ao endereço a ser editado
-                if (linha.startsWith("PessoaCódigo:" + codigoPessoa) && linha.contains("CEP:" + cepBusca)) {
+                if (linha.startsWith("CódigoPessoa:" + codigoPessoa) && linha.contains("CEP:" + cepBusca)) {
                     enderecoEncontrado = true;
 
                     System.out.println("Endereço atual: " + linha);
@@ -46,7 +46,7 @@ public class EditarEndereco {
 
                     // Monta a nova linha do endereço
                     String novoEndereco = String.format(
-                            "PessoaCódigo:%s; CEP:%s; Logradouro:%s; Número:%s; Complemento:%s; Tipo:%s",
+                            "CódigoPessoa:%s; CEP:%s; Logradouro:%s; Número:%s; Complemento:%s; Tipo:%s",
                             codigoPessoa, novoCep, novoLogradouro, novoNumero, novoComplemento, novoTipo
                     );
 

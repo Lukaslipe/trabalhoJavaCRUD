@@ -17,7 +17,7 @@ public class LocalizarEndereco {
         try (BufferedReader reader = new BufferedReader(new FileReader("enderecos.txt"))) {
             String linha;
             while ((linha = reader.readLine()) != null) {
-                if (linha.startsWith("PessoaCódigo:" + codigoPessoa)) {
+                if (linha.startsWith("CódigoPessoa:" + codigoPessoa)) {
                     System.out.println(linha);
                     encontrou = true;
                 }

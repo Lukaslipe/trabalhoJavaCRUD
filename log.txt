@@ -1,45 +1,12 @@
-[2025-05-19 18:34:56] Cadastro de pessoa: 999 - Elo
-[2025-05-19 18:41:01] Cadastro de pessoa: 777 - Marcus
-[2025-05-19 18:41:43] Cadastro de pessoa: 589 - Julia
-[2025-05-19 18:42:22] Cadastro de pessoa: 890 - Mylena
-[2025-05-19 18:43:05] Cadastro de pessoa: 145 - Lucas 
-[2025-05-19 19:02:29] Cadastro de pessoa: 789 - Fernando
-[2025-05-19 19:27:03] Busca realizada - termo: lucas
-[2025-05-19 19:27:58] Busca realizada - termo: física
-[2025-05-19 19:28:10] Busca realizada - termo: jurídica
-[2025-05-19 19:28:20] Busca realizada - termo: 999
-[2025-05-19 19:28:46] Cadastro de pessoa: 999 - Luisa
-[2025-05-19 19:28:54] Busca realizada - termo: 999
-[2025-05-19 19:35:36] Exclusão de pessoa com código: 999
-[2025-05-19 19:42:04] Edição realizada para código: 589
-[2025-05-19 19:42:09] Busca realizada - termo: 589
-[2025-05-19 20:30:43] Endereço cadastrado para pessoa de código: 589
-[2025-05-19 21:11:16] Localizou endereços da pessoa de código: 589
-[2025-05-19 21:14:19] Localizou endereços da pessoa de código: 589
-[2025-05-19 21:14:40] Localizou endereços da pessoa de código: 589
-[2025-05-19 21:14:46] Localizou endereços da pessoa de código: 589
-[2025-05-19 21:15:40] Endereço editado para pessoa de código: 589, CEP original: 83010-390
-[2025-05-19 21:15:46] Localizou endereços da pessoa de código: 589
-[2025-05-19 21:17:16] Endereço excluído para pessoa de código: 589, CEP: 83090-440
-[2025-05-26 19:14:37] Tentativa de edição falhou - código não encontrado: 123
-[2025-05-26 19:22:04] Tentativa de edição falhou - código não encontrado: 123
-[2025-05-26 19:26:08] Tentativa de edição falhou - código não encontrado: 123
-[2025-05-26 19:36:14] Tentativa de edição falhou - código não encontrado: 123
-[2025-05-26 19:43:38] Tentativa de edição falhou - código não encontrado: 123
-[2025-05-26 19:54:43] Tentativa de edição falhou - código não encontrado: 123
-[2025-05-26 20:03:57] Endereço cadastrado para pessoa de código: 777
-[2025-05-26 20:08:10] Endereço cadastrado para pessoa de código: 777
-[2025-05-26 21:02:24] Endereço cadastrado para pessoa de código: 456
-[2025-05-26 21:03:03] Endereço cadastrado para pessoa de código: 768
-[2025-05-26 21:04:53] Endereço cadastrado para pessoa de código: 876
-[2025-05-26 21:06:12] Endereço cadastrado para pessoa de código: 714
-[2025-05-26 21:07:18] Pessoa excluída: Marcus
-[2025-05-26 21:09:05] Pessoa localizada: Mylena
-[2025-05-26 21:09:31] Pessoa localizada: Jujulia
-[2025-05-26 21:10:14] Edição realizada para código: 589
-[2025-05-26 21:17:21] Edição realizada para código: 589
-[2025-05-30 20:16:51] Cadastro de pessoa: FR Cristo Transportes S.A
-[2025-05-30 20:16:59] Pessoa localizada: FR Cristo Transportes S.A
-[2025-05-30 20:49:57] Cadastro de produto: Cadeira de praia
-[2025-05-30 20:51:01] Edição realizada para produto código: 109021
-[2025-05-30 20:51:20] Produto excluído: Cadeira de praia
+[2025-06-02 18:51:55] Cadastro de pessoa: Lucas Felipe Cristo
+[2025-06-02 18:52:07] Pessoa localizada: Lucas Felipe Cristo
+[2025-06-02 18:52:29] Edição realizada para código: 789
+[2025-06-02 18:52:32] Pessoa localizada: Lucas Cristo
+[2025-06-02 18:53:21] Endereço cadastrado para pessoa de código: 789
+[2025-06-02 18:53:26] Localizou endereços da pessoa de código: 789
+[2025-06-02 18:54:05] Endereço editado para pessoa de código: 789, CEP original: 83010390
+[2025-06-02 18:54:10] Localizou endereços da pessoa de código: 789
+[2025-06-02 18:54:23] Endereço excluído para pessoa de código: 789, CEP: 83010390
+[2025-06-02 18:54:45] Endereço cadastrado para pessoa de código: 789
+[2025-06-02 18:55:37] Cadastro de produto: Batom
+[2025-06-02 18:56:05] Edição realizada para produto código: 1010

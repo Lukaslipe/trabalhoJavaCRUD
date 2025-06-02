@@ -3,7 +3,7 @@ public class Produto {
     private String descricao;
     private double custo;
     private double precoVenda;
-    private int codigoFornecedor;
+    private int  codigoFornecedor;
 
     public Produto(int codigo, String descricao, double custo, double precoVenda, int codigoFornecedor) {
         this.codigo = codigo;

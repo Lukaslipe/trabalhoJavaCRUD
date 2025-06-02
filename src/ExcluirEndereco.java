@@ -22,7 +22,7 @@ public class ExcluirEndereco {
         try (BufferedReader reader = new BufferedReader(new FileReader(arquivo))) {
             String linha;
             while ((linha = reader.readLine()) != null) {
-                if (linha.startsWith("PessoaCódigo:" + codigoPessoa) && linha.contains("CEP:" + cepExcluir)) {
+                if (linha.startsWith("CódigoPessoa:" + codigoPessoa) && linha.contains("CEP:" + cepExcluir)) {
                     enderecoEncontrado = true;
                     // Não adiciona essa linha para excluir
                 } else {

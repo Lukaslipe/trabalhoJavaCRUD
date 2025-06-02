@@ -26,8 +26,13 @@ public class EditarPessoa {
                     String novoNome = nomeAtual;
                     String novoTipo = tipoAtual;
 
-                    // ✅ Utilizando PerguntaUtil para escolher o que editar
                     int escolha = Util.PerguntaUtil.perguntar("opcoes_editar_pessoa.txt", "O que você deseja editar?");
+
+                    if (escolha == 0) {
+                        System.out.println("Edição cancelada.");
+                        Log.salvar("Edição cancelada pelo usuário para o código: " + codigoParaEditar);
+                        return;
+                    }
 
                     if (escolha == 1 || escolha == 3) {
                         System.out.print("Novo nome: ");
