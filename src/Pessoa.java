@@ -23,7 +23,7 @@ public class Pessoa {
         this.nome = nome;
     }
 
-    // Polimorfismo: vamos sobrescrever esse método nas subclasses.
+    //Polimorfismo
     @Override
     public String toString() {
         return cod + ";" + nome;

@@ -41,8 +41,8 @@ public class EditarEndereco {
                     System.out.print("Novo Complemento: ");
                     String novoComplemento = scanner.nextLine();
 
-                    System.out.print("Novo Tipo de endereço: ");
-                    String novoTipo = scanner.nextLine();
+                    int codigoTipo = Util.PerguntaUtil.perguntar("tipos_endereco.txt", "Escolha o novo tipo de endereço:");
+                    String novoTipo = Util.PerguntaUtil.retornarDescricao("tipos_endereco.txt", codigoTipo);
 
                     // Monta a nova linha do endereço
                     String novoEndereco = String.format(
@@ -73,7 +73,7 @@ public class EditarEndereco {
                 writer.println(linha);
             }
             System.out.println("Endereço atualizado com sucesso!");
-            Log.salvar("Endereço editado para pessoa de código: " + codigoPessoa + ", CEP original: " + cepBusca);
+            Log.salvar("Endereço editado para pessoa de código: " + codigoPessoa);
         } catch (IOException e) {
             System.out.println("Erro ao salvar arquivo de endereços: " + e.getMessage());
         }

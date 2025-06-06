@@ -10,3 +10,17 @@
 [2025-06-02 18:54:45] Endereço cadastrado para pessoa de código: 789
 [2025-06-02 18:55:37] Cadastro de produto: Batom
 [2025-06-02 18:56:05] Edição realizada para produto código: 1010
+[2025-06-02 19:02:28] Endereço editado para pessoa de código: 789, CEP original: 83010390
+[2025-06-02 19:02:31] Localizou endereços da pessoa de código: 789
+[2025-06-02 19:17:48] Localizou endereços da pessoa de código: 789
+[2025-06-02 19:17:51] Localizou endereços da pessoa de código: 789
+[2025-06-02 20:08:03] Cadastro de pessoa: Eloisa
+[2025-06-02 20:08:58] Edição cancelada pelo usuário para o código: 123
+[2025-06-02 20:09:35] Cadastro de pessoa: Eloisa Fornecedor
+[2025-06-02 20:09:40] Pessoa localizada: Eloisa Fornecedor
+[2025-06-02 20:10:58] Endereço cadastrado para pessoa de código: 123
+[2025-06-02 20:11:30] Endereço cadastrado para pessoa de código: 123
+[2025-06-02 20:11:37] Localizou endereços da pessoa de código: 123
+[2025-06-02 20:12:52] Cadastro de produto: Garrafinha de agua
+[2025-06-02 20:13:18] Cadastro de produto: Copo
+[2025-06-02 20:13:58] Edição realizada para produto código: 2020
