@@ -79,4 +79,122 @@ public class Util {
             return opcoes;
         }
     }
+
+    public static boolean clienteExiste(int codigo) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("pessoas.txt"))) {
+            String linha;
+            while ((linha = reader.readLine()) != null) {
+                String[] dados = linha.split(";");
+                if (Integer.parseInt(dados[0]) == codigo && dados[2].equalsIgnoreCase("Cliente")) {
+                    return true;
+                }
+            }
+        } catch (IOException e) {
+            System.out.println("Erro ao verificar cliente.");
+        }
+        return false;
+    }
+
+    public static boolean enderecoExistePorCEP(int codigoCliente, String cep) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("enderecos.txt"))) {
+            String linha;
+            while ((linha = reader.readLine()) != null) {
+                // Exemplo de linha:
+                // CódigoPessoa:123; CEP:83010390; Logradouro:Rua maria; Número:668; Complemento:Casa; Tipo:Residencial
+                if (linha.contains("CódigoPessoa:" + codigoCliente) && linha.contains("CEP:" + cep)) {
+                    return true;
+                }
+            }
+        } catch (IOException e) {
+            System.out.println("Erro ao verificar endereço.");
+        }
+        return false;
+    }
+
+
+    public static Produto buscarProduto(int codigoProduto) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("produtos.txt"))) {
+            String linha;
+            while ((linha = reader.readLine()) != null) {
+                String[] dados = linha.split(";");
+                if (Integer.parseInt(dados[0]) == codigoProduto) {
+                    int codigo = Integer.parseInt(dados[0]);
+                    String descricao = dados[1];
+                    double custo = Double.parseDouble(dados[2]);
+                    double precoVenda = Double.parseDouble(dados[3]);
+                    int codFornecedor = Integer.parseInt(dados[4]);
+                    return new Produto(codigo, descricao, custo, precoVenda, codFornecedor);
+                }
+            }
+        } catch (IOException e) {
+            System.out.println("Erro ao buscar produto.");
+        }
+        return null;
+    }
+
+    public static int gerarNumeroPedido() {
+        int max = 9999;
+        try (BufferedReader reader = new BufferedReader(new FileReader("pedidos.txt"))) {
+            String linha;
+            while ((linha = reader.readLine()) != null) {
+                String[] partes = linha.split(";");
+                int num = Integer.parseInt(partes[0]);
+                if (num > max) max = num;
+            }
+        } catch (IOException e) {
+            // Arquivo ainda não existe ou erro de leitura
+        }
+        return max + 1;
+    }
+
+    public static List<Integer> buscarCodigosClientePorNome(String nomeBuscado) {
+        List<Integer> codigos = new ArrayList<>();
+
+        try (BufferedReader reader = new BufferedReader(new FileReader("pessoas.txt"))) {
+            String linha;
+            while ((linha = reader.readLine()) != null) {
+                String[] dados = linha.split(";");
+                if (dados.length >= 3 && dados[2].equalsIgnoreCase("Cliente")) {
+                    String nomeLido = dados[1].trim();
+                    if (nomeLido.equalsIgnoreCase(nomeBuscado)) {
+                        try {
+                            codigos.add(Integer.parseInt(dados[0]));
+                        } catch (NumberFormatException e) {
+                            System.out.println("Erro ao converter código de cliente: " + dados[0]);
+                        }
+                    }
+                }
+            }
+        } catch (IOException e) {
+            System.out.println("Erro ao ler pessoas.txt: " + e.getMessage());
+        }
+
+        return codigos;
+    }
+
+    public static List<Integer> buscarCodigosFornecedorPorNome(String nomeBuscado) {
+        List<Integer> codigos = new ArrayList<>();
+
+        try (BufferedReader reader = new BufferedReader(new FileReader("pessoas.txt"))) {
+            String linha;
+            while ((linha = reader.readLine()) != null) {
+                String[] dados = linha.split(";");
+                if (dados.length >= 3 && dados[2].equalsIgnoreCase("Fornecedor")) {
+                    String nomeLido = dados[1].trim();
+                    if (nomeLido.equalsIgnoreCase(nomeBuscado)) {
+                        try {
+                            codigos.add(Integer.parseInt(dados[0]));
+                        } catch (NumberFormatException e) {
+                            System.out.println("Erro ao converter código de fornecedor: " + dados[0]);
+                        }
+                    }
+                }
+            }
+        } catch (IOException e) {
+            System.out.println("Erro ao ler pessoas.txt: " + e.getMessage());
+        }
+
+        return codigos;
+    }
+
 }

@@ -1,3 +1,1 @@
-1010;Batom vermelho;25.0;70.0;456
-2020;Garrafinha de agua;2.0;5.50;234
-3030;Copo;10.0;30.0;500
+1000;cadeira;10.0;20.0;2

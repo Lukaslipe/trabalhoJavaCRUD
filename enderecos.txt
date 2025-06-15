@@ -1,3 +1,1 @@
-CódigoPessoa:789; CEP:83010390; Logradouro:Rua Maria Pasqualim Vaccari; Número:668; Complemento:Casa; Tipo:Entrega
-CódigoPessoa:123; CEP:83010390; Logradouro:Rua maria; Número:668; Complemento:Casa; Tipo:Residencial
-CódigoPessoa:123; CEP:83010250; Logradouro:Rua Joao; Número:654; Complemento:Bloco 02; Tipo:Comercial
+CódigoPessoa:1; CEP:83010390; Logradouro:maria; Número:123; Complemento:Casa; Tipo:Residencial

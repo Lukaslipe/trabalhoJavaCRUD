@@ -1,3 +1,4 @@
 1 - Gerenciar pessoas
 2 - Gerenciar endereços
 3 - Gerenciar produtos
+4 - Gerenciar pedidos de venda

@@ -1,0 +1,4 @@
+1 - Cadastrar Pedido de venda
+2 - Localizar Pedido de venda
+3 - Editar Pedido de venda
+4 - Excluir Pedido de venda

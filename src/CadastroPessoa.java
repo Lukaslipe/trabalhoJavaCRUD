@@ -1,15 +1,12 @@
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.Scanner;
 
 public class CadastroPessoa {
 
     public static void cadastrarPessoa() {
         Scanner scanner = new Scanner(System.in);
-
         String escolha;
-        // Loop até a escolha ser válida
+
         do {
             System.out.println("Escolha o tipo de pessoa para cadastrar:");
             System.out.println("1 - Cliente");
@@ -22,14 +19,13 @@ public class CadastroPessoa {
             }
         } while (!escolha.equals("1") && !escolha.equals("2"));
 
-        System.out.print("Digite o código: ");
-        int cod = Integer.parseInt(scanner.nextLine());
+        int cod = gerarNovoCodigo();
+        System.out.println("Código gerado automaticamente: " + cod);
 
         System.out.print("Digite o nome: ");
         String nome = scanner.nextLine();
 
         Pessoa pessoa;
-
         if (escolha.equals("1")) {
             System.out.print("Digite o CPF do Cliente: ");
             String cpf = scanner.nextLine();
@@ -48,4 +44,24 @@ public class CadastroPessoa {
             System.out.println("Erro ao salvar pessoa: " + e.getMessage());
         }
     }
+
+    private static int gerarNovoCodigo() {
+        int maiorCodigo = 0;
+        try (BufferedReader br = new BufferedReader(new FileReader("pessoas.txt"))) {
+            String linha;
+            while ((linha = br.readLine()) != null) {
+                String[] dados = linha.split(";");
+                if (dados.length > 0) {
+                    int cod = Integer.parseInt(dados[0]);
+                    if (cod > maiorCodigo) {
+                        maiorCodigo = cod;
+                    }
+                }
+            }
+        } catch (IOException | NumberFormatException e) {
+            // Se der erro ao ler, assume código inicial 0
+        }
+        return maiorCodigo + 1;
+    }
+
 }
