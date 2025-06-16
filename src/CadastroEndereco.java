@@ -10,8 +10,15 @@ public class CadastroEndereco {
 
         System.out.println("=== Cadastro de Endereço ===");
 
-        System.out.print("Informe o código da pessoa: ");
-        String codigoPessoa = scanner.nextLine();
+        System.out.print("Digite o nome completo do usuário: ");
+        String nomeUsuario = scanner.nextLine().trim();
+
+        Integer codigoPessoa = Util.buscarCodigoPessoaPorNome(nomeUsuario);
+
+        if (codigoPessoa == null) {
+            System.out.println("Cliente não encontrado!");
+            return;
+        }
 
         System.out.print("CEP: ");
         String cep = scanner.nextLine();

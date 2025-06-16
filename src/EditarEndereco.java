@@ -8,8 +8,15 @@ public class EditarEndereco {
 
         System.out.println("=== Editar Endereço ===");
 
-        System.out.print("Informe o código da pessoa: ");
-        String codigoPessoa = scanner.nextLine();
+        System.out.print("Informe o nome completo da pessoa: ");
+        String nomeUsuario = scanner.nextLine().trim();
+
+        Integer codigoPessoa = Util.buscarCodigoPessoaPorNome(nomeUsuario);
+
+        if (codigoPessoa == null) {
+            System.out.println("Cliente não encontrado!");
+            return;
+        }
 
         System.out.print("Informe o CEP do endereço que deseja editar: ");
         String cepBusca = scanner.nextLine();

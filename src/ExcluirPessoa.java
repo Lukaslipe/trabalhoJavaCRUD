@@ -7,8 +7,26 @@ public class ExcluirPessoa {
 
     public static void excluir() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Digite o código da pessoa que deseja excluir: ");
-        String codigoParaExcluir = scanner.nextLine();
+
+        System.out.print("Digite o nome completo da pessoa: ");
+        String nomeUsuario = scanner.nextLine().trim();
+
+        Integer codigoParaExcluir = Util.buscarCodigoPessoaPorNome(nomeUsuario);
+        if (codigoParaExcluir == null) {
+            System.out.println("Pessoa não encontrada.");
+            return;
+        }
+
+        // Exibe os dados da pessoa antes de confirmar exclusão
+        Util.buscarUsuarioPorID(codigoParaExcluir);
+
+        System.out.print("\nDeseja realmente excluir esta pessoa? (1 = Sim / 0 = Não): ");
+        String resposta = scanner.nextLine().trim();
+
+        if (!resposta.equals("1")) {
+            System.out.println("Exclusão cancelada.");
+            return;
+        }
 
         List<String> linhasAtualizadas = new ArrayList<>();
         boolean encontrada = false;
@@ -19,10 +37,10 @@ public class ExcluirPessoa {
 
             while ((linha = br.readLine()) != null) {
                 String[] dados = linha.split(";");
-                if (dados.length >= 4 && dados[0].equals(codigoParaExcluir)) {
+                if (dados.length >= 3 && dados[0].trim().equals(String.valueOf(codigoParaExcluir))) {
                     encontrada = true;
                     nomeExcluido = dados[1];
-                    continue; // Pula a linha para excluir
+                    continue; // pula a linha para excluir
                 }
                 linhasAtualizadas.add(linha);
             }

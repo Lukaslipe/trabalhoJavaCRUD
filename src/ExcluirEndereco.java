@@ -8,8 +8,15 @@ public class ExcluirEndereco {
 
         System.out.println("=== Excluir Endereço ===");
 
-        System.out.print("Informe o código da pessoa: ");
-        String codigoPessoa = scanner.nextLine();
+        System.out.print("Informe o nome completo da pessoa: ");
+        String nomeUsuario = scanner.nextLine().trim();
+
+        Integer codigoPessoa = Util.buscarCodigoPessoaPorNome(nomeUsuario);
+
+        if (codigoPessoa == null) {
+            System.out.println("Usuário não encontrado!");
+            return;
+        }
 
         System.out.print("Informe o CEP do endereço que deseja excluir: ");
         String cepExcluir = scanner.nextLine();

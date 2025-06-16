@@ -18,9 +18,8 @@ public class MenuPedidoVenda {
 
             try {
                 opcao = Integer.parseInt(scanner.nextLine());
-
                 switch (opcao) {
-                    case 1 -> CadastroPedidoVenda.cadastrarPedido();
+                    case 1 -> CadastroPedidoVenda.cadastrarPedido(scanner);
                     case 2 -> LocalizarPedido.localizar();
                     case 3 -> EditarPedido.editar();
                     case 4 -> ExcluirPedido.excluir();

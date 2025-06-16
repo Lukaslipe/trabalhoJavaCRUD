@@ -1,2 +1,0 @@
-1;Lucas Felipe Cristo;Cliente;13981777921
-2;Eloisa;Fornecedor;13201000110

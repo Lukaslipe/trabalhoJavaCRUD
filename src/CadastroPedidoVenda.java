@@ -3,16 +3,22 @@ import java.util.*;
 
     public class CadastroPedidoVenda {
 
-        public static void cadastrarPedido() {
-            Scanner scanner = new Scanner(System.in);
+        public static void cadastrarPedido(Scanner scanner) {
 
             System.out.println("=== Cadastro de Pedido de Venda ===");
 
             int numeroPedido = Util.gerarNumeroPedido();
             System.out.println("Número do pedido gerado: " + numeroPedido);
 
-            System.out.print("Digite o código do cliente: ");
-            int codigoCliente = Integer.parseInt(scanner.nextLine());
+            System.out.print("Digite o nome completo do cliente: ");
+            String nomeCliente = scanner.nextLine().trim();
+
+            Integer codigoCliente = Util.buscarCodigoClientePorNome(nomeCliente);
+
+            if (codigoCliente == null) {
+                System.out.println("Cliente não encontrado!");
+                return;
+            }
 
             if (!Util.clienteExiste(codigoCliente)) {
                 System.out.println("Cliente não encontrado!");

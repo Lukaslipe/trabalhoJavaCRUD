@@ -1,1 +1,0 @@
-CódigoPessoa:1; CEP:83010390; Logradouro:maria; Número:123; Complemento:Casa; Tipo:Residencial

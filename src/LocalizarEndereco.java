@@ -9,8 +9,15 @@ public class LocalizarEndereco {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("=== Localizar Endereços ===");
-        System.out.print("Informe o código da pessoa: ");
-        String codigoPessoa = scanner.nextLine();
+        System.out.print("Informe o nome completo da pessoa: ");
+        String nomeUsuario = scanner.nextLine().trim();
+
+        Integer codigoPessoa = Util.buscarCodigoPessoaPorNome(nomeUsuario);
+
+        if (codigoPessoa == null) {
+            System.out.println("Cliente não encontrado!");
+            return;
+        }
 
         boolean encontrou = false;
 
@@ -27,7 +34,7 @@ public class LocalizarEndereco {
         }
 
         if (!encontrou) {
-            System.out.println("Nenhum endereço encontrado para o código informado.");
+            System.out.println("Nenhum endereço encontrado para o usuário informado.");
         } else {
             Log.salvar("Localizou endereços da pessoa de código: " + codigoPessoa);
         }

@@ -19,7 +19,7 @@ public class CadastroPessoa {
             }
         } while (!escolha.equals("1") && !escolha.equals("2"));
 
-        int cod = gerarNovoCodigo();
+        int cod = Util.gerarCodigoPessoa();
         System.out.println("Código gerado automaticamente: " + cod);
 
         System.out.print("Digite o nome: ");
@@ -43,25 +43,6 @@ public class CadastroPessoa {
         } catch (IOException e) {
             System.out.println("Erro ao salvar pessoa: " + e.getMessage());
         }
-    }
-
-    private static int gerarNovoCodigo() {
-        int maiorCodigo = 0;
-        try (BufferedReader br = new BufferedReader(new FileReader("pessoas.txt"))) {
-            String linha;
-            while ((linha = br.readLine()) != null) {
-                String[] dados = linha.split(";");
-                if (dados.length > 0) {
-                    int cod = Integer.parseInt(dados[0]);
-                    if (cod > maiorCodigo) {
-                        maiorCodigo = cod;
-                    }
-                }
-            }
-        } catch (IOException | NumberFormatException e) {
-            // Se der erro ao ler, assume código inicial 0
-        }
-        return maiorCodigo + 1;
     }
 
 }

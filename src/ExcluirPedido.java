@@ -6,9 +6,15 @@ public class ExcluirPedido {
     public static void excluir() {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Digite o número do pedido que deseja excluir: ");
-        int numeroPedido = Integer.parseInt(scanner.nextLine());
+        System.out.print("Digite o número do pedido que deseja excluir (5 dígitos): ");
+        String entrada = scanner.nextLine().trim();
 
+        if (!entrada.matches("\\d{5}")) {
+            System.out.println("Número de pedido inválido. Deve conter exatamente 5 dígitos.");
+            return;
+        }
+
+        int numeroPedido = Integer.parseInt(entrada);
         List<String> linhas = new ArrayList<>();
         boolean pedidoEncontrado = false;
 
@@ -20,7 +26,7 @@ public class ExcluirPedido {
                     pedidoEncontrado = true;
                     System.out.println("Pedido encontrado e removido.");
                     Log.salvar("Pedido de venda excluído. Nº: " + numeroPedido);
-                    // Não adiciona essa linha na lista, ou seja, remove
+                    // Não adiciona essa linha — será excluída
                 } else {
                     linhas.add(linha);
                 }
@@ -35,7 +41,7 @@ public class ExcluirPedido {
             return;
         }
 
-        // Reescreve o arquivo sem a linha do pedido excluído
+        // Reescreve o arquivo sem o pedido excluído
         try (PrintWriter writer = new PrintWriter(new FileWriter("pedidos.txt"))) {
             for (String l : linhas) {
                 writer.println(l);

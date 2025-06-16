@@ -1,44 +1,19 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.Scanner;
 
 public class LocalizarPessoa {
 
     public static void localizar() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Digite o código da pessoa que deseja localizar: ");
-        String codigoBuscado = scanner.nextLine();
 
-        boolean encontrada = false;
+        System.out.print("Digite o nome do usuário: ");
+        String nome = scanner.nextLine().trim();
 
-        try (BufferedReader br = new BufferedReader(new FileReader("pessoas.txt"))) {
-            String linha;
-            while ((linha = br.readLine()) != null) {
-                String[] dados = linha.split(";");
-                if (dados.length >= 4 && dados[0].equals(codigoBuscado)) {
-                    System.out.println("Pessoa encontrada:");
-                    System.out.println("Código: " + dados[0]);
-                    System.out.println("Nome: " + dados[1]);
-                    System.out.println("Tipo: " + dados[2]);
-                    if (dados[2].equals("Cliente")) {
-                        System.out.println("CPF: " + dados[3]);
-                    } else if (dados[2].equals("Fornecedor")) {
-                        System.out.println("CNPJ: " + dados[3]);
-                    } else {
-                        System.out.println("Documento: " + dados[3]);
-                    }
-                    Log.salvar("Pessoa localizada: " + dados[1]);
-                    encontrada = true;
-                    break;
-                }
-            }
-        } catch (IOException e) {
-            System.out.println("Erro ao ler o arquivo de pessoas: " + e.getMessage());
-        }
+        Integer codigo = Util.buscarCodigoPessoaPorNome(nome);
 
-        if (!encontrada) {
-            System.out.println("Pessoa com código " + codigoBuscado + " não encontrada.");
+        if (codigo == null) {
+            System.out.println("Pessoa não encontrada.");
+        } else {
+            Util.buscarUsuarioPorID(codigo);
         }
     }
 }

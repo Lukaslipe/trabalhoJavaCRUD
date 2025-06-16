@@ -5,8 +5,15 @@ public class EditarPessoa {
 
     public static void executarEdicao() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Digite o código da pessoa que deseja editar: ");
-        String codigoParaEditar = scanner.nextLine().trim();
+
+        System.out.print("Digite o nome completo da pessoa: ");
+        String nomeUsuario = scanner.nextLine().trim();
+
+        Integer codigoParaEditar = Util.buscarCodigoPessoaPorNome(nomeUsuario);
+        if (codigoParaEditar == null) {
+            System.out.println("Pessoa não encontrada.");
+            return;
+        }
 
         File arquivo = new File("pessoas.txt");
         List<String> linhasAtualizadas = new ArrayList<>();
@@ -16,38 +23,17 @@ public class EditarPessoa {
             String linha;
             while ((linha = br.readLine()) != null) {
                 if (linha.startsWith(codigoParaEditar + ";")) {
-                    // Pessoa encontrada
-                    System.out.println("Pessoa encontrada: " + linha);
-
                     String[] partes = linha.split(";", 3);
                     String nomeAtual = partes.length > 1 ? partes[1] : "";
                     String tipoAtual = partes.length > 2 ? partes[2] : "";
 
-                    String novoNome = nomeAtual;
-                    String novoTipo = tipoAtual;
+                    System.out.println("Pessoa encontrada: " + linha);
+                    System.out.print("Digite o novo nome: ");
+                    String novoNome = scanner.nextLine().trim();
 
-                    int escolha = Util.PerguntaUtil.perguntar("opcoes_editar_pessoa.txt", "O que você deseja editar?");
-
-                    if (escolha == 0) {
-                        System.out.println("Edição cancelada.");
-                        Log.salvar("Edição cancelada pelo usuário para o código: " + codigoParaEditar);
-                        return;
-                    }
-
-                    if (escolha == 1 || escolha == 3) {
-                        System.out.print("Novo nome: ");
-                        novoNome = scanner.nextLine();
-                    }
-
-                    if (escolha == 2 || escolha == 3) {
-                        System.out.print("Novo tipo de pessoa (Física/Jurídica): ");
-                        novoTipo = scanner.nextLine();
-                    }
-
-                    String novaLinha = codigoParaEditar + ";" + novoNome + ";" + novoTipo;
+                    String novaLinha = codigoParaEditar + ";" + novoNome + ";" + tipoAtual;
                     linhasAtualizadas.add(novaLinha);
                     editou = true;
-
                 } else {
                     linhasAtualizadas.add(linha);
                 }
@@ -63,8 +49,8 @@ public class EditarPessoa {
                 for (String l : linhasAtualizadas) {
                     pw.println(l);
                 }
-                System.out.println("Pessoa com código " + codigoParaEditar + " atualizada com sucesso.");
-                Log.salvar("Edição realizada para código: " + codigoParaEditar);
+                System.out.println("Nome da pessoa atualizado com sucesso.");
+                Log.salvar("Nome editado com sucesso para código: " + codigoParaEditar);
             } catch (IOException e) {
                 System.out.println("Erro ao salvar alterações: " + e.getMessage());
                 Log.salvar("Erro ao salvar após edição: " + e.getMessage());
