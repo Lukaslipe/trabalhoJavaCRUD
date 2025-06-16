@@ -1,0 +1,29 @@
+[2025-06-16 15:56:51] Cadastro de pessoa: Lucas Felipe Cristo
+[2025-06-16 15:59:09] Cadastro de pessoa: Erick Roberto Felipe Melo
+[2025-06-16 15:59:23] Cadastro de pessoa: Rafaela Elza Ana dos Santos
+[2025-06-16 15:59:37] Cadastro de pessoa: Julio Lucca Lopes
+[2025-06-16 16:00:01] Cadastro de pessoa: Edson Diogo Nogueira
+[2025-06-16 16:00:13] Cadastro de pessoa: Vitor Guilherme Pedro Porto
+[2025-06-16 16:00:27] Cadastro de pessoa: Daniela Marcela Benedita Monteiro
+[2025-06-16 16:00:44] Cadastro de pessoa: João Erick Francisco Aparício
+[2025-06-16 16:00:54] Cadastro de pessoa: Rita Nair Cardoso
+[2025-06-16 16:01:04] Cadastro de pessoa: Laís Stella Rodrigues
+[2025-06-16 16:01:16] Cadastro de pessoa: Arthur e Liz Padaria Ltda
+[2025-06-16 16:01:25] Cadastro de pessoa: Lívia e Kauê Limpeza Ltda
+[2025-06-16 16:01:36] Cadastro de pessoa: Emanuelly e Antonio Casa Noturna ME
+[2025-06-16 16:01:56] Cadastro de pessoa: Raul e Ruan Contábil Ltda
+[2025-06-16 16:02:16] Cadastro de pessoa: Tânia e Sebastiana Entregas Expressas Ltda
+[2025-06-16 16:02:27] Cadastro de pessoa: Eduardo e Brenda Financeira ME
+[2025-06-16 16:02:35] Cadastro de pessoa: Mirella e Iago Marcenaria ME
+[2025-06-16 16:02:55] Cadastro de pessoa: Enzo e Larissa Advocacia Ltda
+[2025-06-16 16:03:03] Cadastro de pessoa: Evelyn e Pietra Locações de Automóveis Ltda
+[2025-06-16 16:03:10] Cadastro de pessoa: Giovana e Nelson Fotografias ME
+[2025-06-16 16:03:52] Cadastro de pessoa: Infocwb
+[2025-06-16 16:08:16] Endereço cadastrado para pessoa de código: 2
+[2025-06-16 16:09:06] Endereço cadastrado para pessoa de código: 1
+[2025-06-16 16:09:43] Endereço cadastrado para pessoa de código: 1
+[2025-06-16 16:10:23] Cadastro de produto: Celular motorola
+[2025-06-16 16:10:45] Cadastro de produto: Celular Iphone
+[2025-06-16 16:11:04] Cadastro de produto: Teclado hyperx
+[2025-06-16 16:11:28] Cadastro de produto: Mouse Hazer
+[2025-06-16 16:12:01] Cadastro de produto: Fone Logitech G435

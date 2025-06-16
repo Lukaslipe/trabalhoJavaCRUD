@@ -1,0 +1,3 @@
+CódigoPessoa:2; CEP:29107368; Logradouro:Rua Vital Brasil; Número:872; Complemento:Cas; Tipo:Residencial
+CódigoPessoa:1; CEP:83010390; Logradouro:Rua Maria Pasqualim Vaccari; Número:668; Complemento:Casa; Tipo:Residencial
+CódigoPessoa:1; CEP:29107368; Logradouro:Rua Vital Brasil; Número:152; Complemento:Bloco 02; Tipo:Entrega

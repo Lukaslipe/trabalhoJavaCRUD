@@ -1,0 +1,21 @@
+1;Lucas Felipe Cristo;Cliente;12381777921
+2;Erick Roberto Felipe Melo;Cliente;16744849255
+3;Rafaela Elza Ana dos Santos;Cliente;15168285503
+4;Julio Lucca Lopes;Cliente;59496200974
+5;Edson Diogo Nogueira;Cliente;30172093007
+6;Vitor Guilherme Pedro Porto;Cliente;23239995409
+7;Daniela Marcela Benedita Monteiro;Cliente;25500534270
+8;João Erick Francisco Aparício;Cliente;00219758336
+9;Rita Nair Cardoso;Cliente;17402385329
+10;Laís Stella Rodrigues;Cliente;83625927535
+11;Arthur e Liz Padaria Ltda;Fornecedor;29692606000117
+12;Lívia e Kauê Limpeza Ltda;Fornecedor;26741293000151
+13;Emanuelly e Antonio Casa Noturna ME;Fornecedor;43166544000130
+14;Raul e Ruan Contábil Ltda;Fornecedor;12079620000147
+15;Tânia e Sebastiana Entregas Expressas Ltda;Fornecedor;31079740000199
+16;Eduardo e Brenda Financeira ME;Fornecedor;08020445000145
+17;Mirella e Iago Marcenaria ME;Fornecedor;86500323000160
+18;Enzo e Larissa Advocacia Ltda;Fornecedor;14099242000199
+19;Evelyn e Pietra Locações de Automóveis Ltda;Fornecedor;00214842000146
+20;Giovana e Nelson Fotografias ME;Fornecedor;37212039000182
+21;Infocwb;Fornecedor;07949993000191

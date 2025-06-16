@@ -318,4 +318,26 @@ public class Util {
         return maiorCodigo + 1;
     }
 
+    public static List<String> buscarProdutosPorNome(String termoBusca) {
+        List<String> resultados = new ArrayList<>();
+        termoBusca = termoBusca.toLowerCase();
+
+        try (BufferedReader br = new BufferedReader(new FileReader("produtos.txt"))) {
+            String linha;
+            while ((linha = br.readLine()) != null) {
+                String[] dados = linha.split(";");
+                if (dados.length >= 2) {
+                    String descricao = dados[1].toLowerCase();
+                    if (descricao.contains(termoBusca)) {
+                        resultados.add(linha);
+                    }
+                }
+            }
+        } catch (IOException e) {
+            System.out.println("Erro ao ler o arquivo de produtos: " + e.getMessage());
+        }
+
+        return resultados;
+    }
+
 }
