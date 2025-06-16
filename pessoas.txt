@@ -19,3 +19,4 @@
 19;Evelyn e Pietra Locações de Automóveis Ltda;Fornecedor;00214842000146
 20;Giovana e Nelson Fotografias ME;Fornecedor;37212039000182
 21;Infocwb;Fornecedor;07949993000191
+22;Mauricioo;Cliente;01056978542

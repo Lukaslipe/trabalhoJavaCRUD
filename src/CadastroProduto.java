@@ -20,12 +20,16 @@ public class CadastroProduto {
         System.out.print("Digite o preço de venda do produto (R$): ");
         double precoVenda = Double.parseDouble(scanner.nextLine());
 
-        int codigoFornecedor;
+        Integer codigoFornecedor;
         while (true) {
             System.out.print("Digite o nome completo do fornecedor: ");
             try {
                 String nomeFornecedor = scanner.nextLine();
                 codigoFornecedor = Util.buscarCodigoFornecedorPorNome(nomeFornecedor);
+                if (codigoFornecedor == null) {
+                    System.out.println("Fornecedor não encontrado");
+                    return; // ou trate conforme sua lógica
+                }
                 if (Util.fornecedorExiste(codigoFornecedor)) {
                     break;
                 } else {

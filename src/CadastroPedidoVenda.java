@@ -20,10 +20,10 @@ import java.util.*;
                 return;
             }
 
-            if (!Util.clienteExiste(codigoCliente)) {
-                System.out.println("Cliente não encontrado!");
-                return;
-            }
+//            if (!Util.clienteExiste(codigoCliente)) {
+//                System.out.println("Cliente não encontrado!");
+//                return;
+//            }
 
             System.out.print("Digite o CEP do endereço de entrega: ");
             String cep = scanner.nextLine();

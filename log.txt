@@ -27,3 +27,26 @@
 [2025-06-16 16:11:04] Cadastro de produto: Teclado hyperx
 [2025-06-16 16:11:28] Cadastro de produto: Mouse Hazer
 [2025-06-16 16:12:01] Cadastro de produto: Fone Logitech G435
+[2025-06-16 18:17:42] Cliente localizado: Lucas Felipe Cristo
+[2025-06-16 18:17:55] Fornecedor localizado: Infocwb
+[2025-06-16 18:18:13] Nome editado com sucesso para código: 1
+[2025-06-16 18:18:25] Nome editado com sucesso para código: 1
+[2025-06-16 18:18:38] Localizou endereços da pessoa de código: 1
+[2025-06-16 18:19:14] Endereço cadastrado para pessoa de código: 1
+[2025-06-16 18:19:31] Localizou endereços da pessoa de código: 1
+[2025-06-16 18:19:45] Endereço excluído para pessoa de código: 1, CEP: 12345123
+[2025-06-16 18:27:42] Cadastro de produto: Chocolate Kinder Bueno
+[2025-06-16 18:29:26] Edição realizada para produto código: 1005
+[2025-06-16 18:30:33] Pedido de venda cadastrado. Nº: 10000 | Cliente: 1
+[2025-06-16 18:31:37] Pedido de venda cadastrado. Nº: 10001 | Cliente: 1
+[2025-06-16 18:32:58] Endereço de entrega editado para o pedido nº 10000
+[2025-06-16 18:33:08] Pedido de venda excluído. Nº: 10000
+[2025-06-16 18:35:11] Cadastro de pessoa: Mauricio
+[2025-06-16 18:35:21] Cliente localizado: Mauricio
+[2025-06-16 18:35:55] Nome editado com sucesso para código: 22
+[2025-06-16 18:37:41] Endereço cadastrado para pessoa de código: 22
+[2025-06-16 18:38:24] Localizou endereços da pessoa de código: 22
+[2025-06-16 18:39:42] Endereço editado para pessoa de código: 22
+[2025-06-16 18:41:47] Cadastro de produto: carro
+[2025-06-16 18:43:22] Edição realizada para produto código: 1006
+[2025-06-16 18:44:51] Pedido de venda cadastrado. Nº: 10002 | Cliente: 22

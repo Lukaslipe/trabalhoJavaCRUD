@@ -3,3 +3,5 @@
 1002;Teclado hyperx;300.0;500.0;21
 1003;Mouse Hazer;79.0;119.0;21
 1004;Fone Logitech G435;120.0;150.0;21
+1005;Chocolate Kinder Bueno;5.0;11;11
+1006;Carro Volkswagen golf;25356.0;100000.0;19
